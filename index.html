@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Presentation UNAL</title>
+
+	<link rel="stylesheet" href="revealjs/dist/reset.css">
+	<link rel="stylesheet" href="revealjs/dist/reveal.css">
+	<link rel="stylesheet" href="revealjs/dist/theme/white.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="revealjs/plugin/highlight/monokai.css" id="highlight-theme">
+	<style>
+		div.footer {
+			margin-top: 600px;
+			font-size: 20px;
+		}
+
+		.reveal h1,
+		.reveal h2,
+		.reveal h3,
+		.reveal h4,
+		.reveal h5 {
+			text-transform: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- ----- -->
+			<!-- Beginning of slides -->
+			<section>
+				<section>
+					<h2>Title</h2>
+					<p>Diego Sandoval</p>
+					<p>2021</p>
+				</section>
+			</section>
+
+			<section>
+				<section data-markdown>
+					<textarea data-template>
+					## CV
+					* [2002 - 2008] Electrial Engineering @ Unal
+						* [2006] LABE ⚽ 
+						* [2007 - 2010] CIF
+					* [2010 - 2015] ETH
+					* [2011 - 2019] Sustainable buildings
+					* [2017 - 2019] **LoRa/LoRaWAN** as a hobby
+					* [2019 - ] <span class="fragment highlight-red">**LoRa&reg;/LoRaWAN&reg;**</span> as a job
+				     
+				</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+					## Disclaimer \# 1
+					* This is a personal project
+				</textarea>
+				</section>
+
+
+				<section data-markdown data-background-image="images/cloudia3.jpg">
+					<textarea data-template>
+					<br></br>
+					<br></br>
+					<br></br>
+					<br></br>
+					[https://cloudiaworld.github.io/](https://cloudiaworld.github.io/)
+				</textarea>
+				</section>
+
+				<section>
+					<img data-src="images/gonzalo.png" height="650">
+				</section>
+
+			</section>
+
+			<section data-markdown data-background-color="#404040">
+				<textarea data-template>
+					## Outline
+					* A crash-course on LoRa&reg;/LoRaWAN&reg; ~ 5'
+					* A cow-tracker application 🐮🐮🐮  ~ 20'
+					* Intermezzo ~ 5'
+					* Getting started with LoRaWAN&reg; ~ 10'
+					* Q&A
+				</textarea>
+			</section>
+
+			<section>
+				<section data-markdown>
+					<textarea data-template>
+						## Recap
+						* [Gonzalos's presentation]()
+						* [What are LoRa&reg; and LoRaWAN&reg;?](https://lora-developers.semtech.com/library/tech-papers-and-guides/lora-and-lorawan/)
+						* [What is LoRaWan](https://reference.digilentinc.com/reference/programmable-logic/pynq-z1/reference-manual)
+                    </textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						<img data-src="images/osi.png">
+
+					[Source: Semtech](https://lora-developers.semtech.com/library/tech-papers-and-guides/lora-and-lorawan/)
+					</textarea>
+				</section>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					## Wireless technologies
+					<img data-src="images/wireless.png" height="300">
+
+					* $\uparrow R$: long range
+					* $\uparrow B$: high bandwidth
+					* $\downarrow C$: low power consumption (cost)
+				</textarea>
+			</section>
+
+
+			<section>
+				<img data-src="images/wireless.png">
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+					<img data-src="images/lorawan_network.png">
+
+					[Source: Semtech](https://lora-developers.semtech.com/library/tech-papers-and-guides/lora-and-lorawan/)
+				</textarea>
+			</section>
+
+			<section data-background-image="images/lorawan_network0.png" data-background-size="contain" data-markdown
+				data-transition="fade">
+				<textarea data-template>
+					<br></br>
+					<br></br>
+					[Source: TTN](www.thethingsnetwork.org)
+				</textarea>
+			</section>
+
+			<section data-background-image="images/lorawan_network1.png" data-background-size="contain" data-markdown
+				data-transition="fade">
+			</section>
+
+			<section data-background-image="images/lorawan_network2.png" data-background-size="contain" data-markdown
+				data-transition="fade">
+				<textarea data-template>
+					## Network ownership
+					* Both private and public networks are supported
+						* Infrastructure as a service
+						* Private network
+						* Open-source
+						* A hybrid model
+				</textarea>
+			</section>
+
+
+
+
+			<section data-markdown>
+				<textarea data-template>
+					* 
+				</textarea>
+			</section>
+
+
+		</div>
+	</div>
+
+	<script src="revealjs/dist/reveal.js"></script>
+	<script src="revealjs/plugin/notes/notes.js"></script>
+	<script src="revealjs/plugin/markdown/markdown.js"></script>
+	<script src="revealjs/plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			progress: false,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+	<script src="revealjs/plugin/math/math.js"></script>
+	<script>
+		Reveal.initialize({
+			math: {
+				mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+				config: 'TeX-AMS_HTML-full',
+				// pass other options into `MathJax.Hub.Config()`
+				TeX: { Macros: { RR: "{\\bf R}" } },
+			},
+			plugins: [RevealMath]
+		});
+	</script>
+</body>
+
+</html>
