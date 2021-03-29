@@ -35,29 +35,29 @@
 			<!-- ----- -->
 			<!-- Beginning of slides -->
 			<section>
-				<section>
-					<h2>Title</h2>
+				<section data-background-color="#FFFFFF">
+					<h2>LoRaWAN&reg;-based Applications</h2>
 					<p>Diego Sandoval</p>
-					<p>2021</p>
+					<p>Unal, 2021</p>
 				</section>
 			</section>
 
 			<section>
-				<section data-markdown>
+				<section data-markdown data-background-color="#FFFFFF">
 					<textarea data-template>
 					## CV
-					* [2002 - 2008] Electrial Engineering @ Unal
+					* [2002 - 2008] Electrical Engineering @ Unal
 						* [2006] LABE ⚽ 
 						* [2007 - 2010] CIF
 					* [2010 - 2015] ETH
 					* [2011 - 2019] Sustainable buildings
-					* [2017 - 2019] **LoRa/LoRaWAN** as a hobby
-					* [2019 - ] <span class="fragment highlight-red">**LoRa&reg;/LoRaWAN&reg;**</span> as a job
+					* [2017 - 2019] **LoRa/LoRaWAN** - hobby
+					* [2019 - ] <span class="fragment highlight-red">**LoRa&reg;/LoRaWAN&reg;**</span> - job
 				     
 				</textarea>
 				</section>
 
-				<section data-markdown>
+				<section data-markdown data-background-image="#404040">
 					<textarea data-template>
 					## Disclaimer \# 1
 					* This is a personal project
@@ -84,8 +84,8 @@
 			<section data-markdown data-background-color="#404040">
 				<textarea data-template>
 					## Outline
-					* A crash-course on LoRa&reg;/LoRaWAN&reg; ~ 5'
-					* A cow-tracker application 🐮🐮🐮  ~ 20'
+					* LoRa&reg;/LoRaWAN&reg; recap ~ 5'
+					* A cow-tracking application 🐮🐮🐮  ~ 20'
 					* Intermezzo ~ 5'
 					* Getting started with LoRaWAN&reg; ~ 10'
 					* Q&A
@@ -93,26 +93,30 @@
 			</section>
 
 			<section>
+				<section data-markdown data-background-color="#DAA520">
+					<textarea data-template>
+						## LoRa&reg;  and LoRAWAN&reg;
+					</textarea>
+				</section>
+
 				<section data-markdown>
 					<textarea data-template>
 						## Recap
 						* [Gonzalos's presentation]()
-						* [What are LoRa&reg; and LoRaWAN&reg;?](https://lora-developers.semtech.com/library/tech-papers-and-guides/lora-and-lorawan/)
-						* [What is LoRaWan](https://reference.digilentinc.com/reference/programmable-logic/pynq-z1/reference-manual)
+						* [What are LoRa and LoRaWAN?](https://lora-developers.semtech.com/library/tech-papers-and-guides/lora-and-lorawan/)
+						* [What is LoRaWan?](https://reference.digilentinc.com/reference/programmable-logic/pynq-z1/reference-manual)
                     </textarea>
 				</section>
 
 				<section data-markdown>
 					<textarea data-template>
-						<img data-src="images/osi.png">
-
-					[Source: Semtech](https://lora-developers.semtech.com/library/tech-papers-and-guides/lora-and-lorawan/)
+						## Difference between LoRa and LoRaWAN
+						<img data-src="https://lora-developers.semtech.com/uploads/documents/images/Technology_stack.png">
 					</textarea>
 				</section>
-			</section>
 
-			<section data-markdown>
-				<textarea data-template>
+				<section data-markdown>
+					<textarea data-template>
 					## Wireless technologies
 					<img data-src="images/wireless.png" height="300">
 
@@ -120,53 +124,138 @@
 					* $\uparrow B$: high bandwidth
 					* $\downarrow C$: low power consumption (cost)
 				</textarea>
-			</section>
+				</section>
 
 
-			<section>
-				<img data-src="images/wireless.png">
-			</section>
+				<section data-markdown>
+					<textarea data-template>
+						## LoRaWAN architecture
 
-			<section data-markdown>
-				<textarea data-template>
-					<img data-src="images/lorawan_network.png">
+						<img data-src="https://lora-developers.semtech.com/uploads/documents/images/Typical_Network.png">
 
-					[Source: Semtech](https://lora-developers.semtech.com/library/tech-papers-and-guides/lora-and-lorawan/)
-				</textarea>
-			</section>
+						[Source: Semtech](https://lora-developers.semtech.com/library/tech-papers-and-guides/lora-and-lorawan/)
+					</textarea>
+				</section>
 
-			<section data-background-image="images/lorawan_network0.png" data-background-size="contain" data-markdown
-				data-transition="fade">
-				<textarea data-template>
+				<section data-background-image="images/lorawan_network0.png" data-background-size="contain"
+					data-markdown data-transition="fade">
+					<textarea data-template>
 					<br></br>
 					<br></br>
 					[Source: TTN](www.thethingsnetwork.org)
 				</textarea>
-			</section>
+				</section>
 
-			<section data-background-image="images/lorawan_network1.png" data-background-size="contain" data-markdown
-				data-transition="fade">
-			</section>
+				<section data-background-image="images/lorawan_network1.png" data-background-size="contain"
+					data-markdown data-transition="fade">
+				</section>
 
-			<section data-background-image="images/lorawan_network2.png" data-background-size="contain" data-markdown
-				data-transition="fade">
-				<textarea data-template>
-					## Network ownership
-					* Both private and public networks are supported
-						* Infrastructure as a service
-						* Private network
-						* Open-source
-						* A hybrid model
+				<section data-background-image="images/lorawan_network2.png" data-background-size="contain"
+					data-markdown data-transition="fade">
+					<textarea data-template>
+					## Infrastructure ownership
+					* Infrastructure as a service: operator
+					* Private network
+					* Open-source: owned by the community
+					* A hybrid model
 				</textarea>
+				</section>
+
+				<section data-markdown data-background-image="images/ttn-map-1.png" data-background-size="contain">
+					<textarea data-template>
+
+						<br></br>
+						<br></br>
+						<br></br>
+						<br></br>
+						<br></br>
+						[TTN map](https://www.thethingsnetwork.org/map)
+					</textarea>
+				</section>
+
+				<section data-background-image="images/ttn-map-2.png" data-background-size="contain">
+				</section>
+
+				<section data-background-image="images/ttn-map-3.png" data-background-size="contain">
+				</section>
+
+
 			</section>
 
+			<section>
+				<section data-markdown data-background-color="#228B22">
+					<textarea data-template>
+						## A 🐄-tracking application implementing LoRaWAN
+					</textarea>
+				</section>
 
+			</section>
 
+			<section>
+				<section data-markdown data-background-color="#00BFFF">
+					<textarea data-template>
+						## Intermezzo
+						### The democratization of knowledge
+					</textarea>
+				</section>
 
-			<section data-markdown>
-				<textarea data-template>
-					* 
+				<section>
+					<img src="images/software-libre.png" style="border:0;background:none">
+				</section>
+
+				<section data-background-image="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/121212_2_OpenSwissKnife.png/1920px-121212_2_OpenSwissKnife.png" data-background-size="contain">
+					<div style="margin-top: 630px;font-size:20px;color:white;">Source: Wikipedia</div>
+				</section>
+
+				<section data-markdown data-background-image="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Houghton_EC.B1328.620ib_-_Novum_organum_scientiarum.jpg/1280px-Houghton_EC.B1328.620ib_-_Novum_organum_scientiarum.jpg"
+					data-background-opacity="0.2" data-background-size="contains">
+					<textarea data-template>
+					## Scientia potentia est
+
+					* *The New Instrument* Francis Bacon, 1620
+					* *Leviathan* Thomas Hobbes, 1668
+
+					<!-- ### Knowledge is power -->
 				</textarea>
+				</section>
+				<section data-markdown data-background-image="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Leviathan_by_Thomas_Hobbes.jpg/1280px-Leviathan_by_Thomas_Hobbes.jpg" data-background-opacity="0.2"
+					data-background-size="contains">
+					<textarea data-template>
+						## The discovery of ignorance
+						<br>
+							Modern science paradigm:
+						<br>
+						<br>
+
+						* *Ignoramus*: we do not know
+						* We have to obtain knowledge by gathering observations and using mathematical tools
+						* The acquisition of `new powers`: new technologies
+						<br>
+						<p style="font-size:10pt">Source: Harari, Sapiens</p>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						* The [information source](https://en.wikipedia.org/) I used to prepare some of the slides
+						* The [framework](https://github.com/hakimel/reveal.js/) I used to create them	
+						* The [text editor](https://github.com/Microsoft/vscode) I used to type them
+						* The [web browser](https://github.com/mozilla) am using to display the presentation
+						* [This presentation itself](https://github.com/twaclaw/presentation_unal_cowtracker)
+						* The code examples
+						<span class="fragment fade-in">
+						<p class="fragment grow highlight-red">are all open-source!!!</p>
+						</span>
+					</textarea>
+				</section>
+	
+			</section>
+
+			<section>
+				<section data-markdown data-background-color="#F4A460">
+					<textarea data-template>
+						## Getting started with LoRaWAN
+					</textarea>
+				</section>
 			</section>
 
 
