@@ -129,7 +129,7 @@
 
 				<section data-markdown>
 					<textarea data-template>
-						## LoRaWAN architecture
+						## (Typical) LoRaWAN network implementation
 
 						<img data-src="https://lora-developers.semtech.com/uploads/documents/images/Typical_Network.png">
 
@@ -256,6 +256,110 @@
 						## Getting started with LoRaWAN
 					</textarea>
 				</section>
+
+				<section data-background-image="images/lorawan_network1.png" data-background-size="contain"
+					data-markdown data-transition="fade">
+				</section>
+
+				<section data-markdown data-background-image="images/lorawan_network2.png" data-background-size="contain">
+					<textarea data-template>
+						## Demo
+
+						<img data-src="images/starting_with_lorawan.png">
+
+						- [B-L072Z-LRWAN1 STM32L0 Discovery kit](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html#)
+						- [Mini Hub](https://lora-alliance.org/lora_products/mini-hub-wall-plug-gateway/)
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## End device: [B-L072Z-LRWAN1](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html#)
+
+						<img data-src="images/radio.png" height="400">
+
+						[Source: st.com](https://www.st.com/resource/en/user_manual/dm00329995-discovery-kit-for-lorawan-sigfox-and-lpwan-protocols-with-stm32l0-stmicroelectronics.pdf)
+
+					</textarea>
+				</section>
+				<section data-markdown data-background-color="#000000">
+					<textarea data-template>
+						## It's console time ...
+					</textarea>
+				</section>
+
+				<section data-markdown data-background-color="#000000">
+					<textarea data-template>
+						## End device: [basicmac.io](https://basicmac.io)
+						[Getting started](https://basicmac.io/guide/gettingstarted.html)
+				
+						<pre>
+							<code data-trim data-noescape bash>
+								# clone the repository including submodules
+								git clone --recurse-submodules https://github.com/mkuyper/basicmac.git basicmac
+
+								cd basicmac
+
+								# create a virtual environment and activate it
+								python -m  venv venv
+								source venv/bin/activate
+							
+								# install Python dependencies 
+								pip install -r basicloader/requirements.txt
+								pip install -r ./requirements.txt
+								pip install pyyaml # an additional dependency
+							</code>
+						</pre>
+					</textarea>
+				</section>
+	
+				<section data-markdown data-background-color="#000000">
+					<textarea data-template>
+						## End device: [basicmac.io](https://basicmac.io)
+						Compiling
+				
+						<pre>
+							<code data-trim data-noescape bash>
+								cd projects/ex-join
+								VARIANT=eu868 make
+								make loadbl # bootloader
+								make load  # application
+							</code>
+						</pre>
+					</textarea>
+				</section>
+
+				<section data-markdown data-background-color="#000000">
+					<textarea data-template>
+						## End device: personalization
+
+						* Over the air activation
+
+							* *DevEUI* End device identifier
+							* *JoinEUI* Join-Server identifier
+							* *AppKey* Application Key
+				
+						<pre>
+							<code data-trim data-noescape bash>
+								minicom  -D /dev/ttyACM0  -b 2000000
+							</code>
+						</pre>
+					</textarea>
+				</section>
+	
+				<section data-markdown data-background-image="images/minicom1-off.png" data-background-size="contain" data-background-color="#000000">
+					<textarea data-template>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						AppKey: 404142434445464748494A4B4C4D4E4F
+					</textarea>
+				</section>	
 			</section>
 
 
