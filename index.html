@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>Presentation UNAL</title>
+	<title>Presentation UNAL LoRa&reg;/LoRaWAN&reg;</title>
 
 	<link rel="stylesheet" href="revealjs/dist/reset.css">
 	<link rel="stylesheet" href="revealjs/dist/reveal.css">
@@ -36,7 +36,7 @@
 			<!-- Beginning of slides -->
 			<section>
 				<section data-background-color="#FFFFFF">
-					<h2>LoRaWAN&reg;-based Applications</h2>
+					<h2>Examples of LoRaWAN&reg; Applications</h2>
 					<p>Diego Sandoval</p>
 					<p>Unal, 2021</p>
 				</section>
@@ -53,7 +53,6 @@
 					* [2011 - 2019] Sustainable buildings
 					* [2017 - 2019] **LoRa/LoRaWAN** - hobby
 					* [2019 - ] <span class="fragment highlight-red">**LoRa&reg;/LoRaWAN&reg;**</span> - job
-				     
 				</textarea>
 				</section>
 
@@ -67,22 +66,22 @@
 					[https://cloudiaworld.github.io/](https://cloudiaworld.github.io/)
 				</textarea>
 				</section>
-			</section>
 
-			<section data-markdown data-background-image="#404040">
-				<textarea data-template>
+				<section data-markdown data-background-image="#404040">
+					<textarea data-template>
 					## Disclaimer \# 1
 					* This is a pet project
 				</textarea>
-			</section>
+				</section>
 
+			</section>
 
 			<section data-markdown data-background-color="#404040">
 				<textarea data-template>
 					## Outline
-					* LoRa&reg;/LoRaWAN&reg; recap ~ 5'
-					* A cow-tracking application 🐮🐮🐮  ~ 20'
-					* Intermezzo ~ 5'
+					* LoRa&reg;/LoRaWAN&reg; recap ~ 10'
+					* A cow-tracking application 🐮🐮🐮  ~ 15'
+					* Intermezzo ~ 3'
 					* Getting started with LoRaWAN&reg; ~ 10'
 					* Q&A
 				</textarea>
@@ -98,9 +97,10 @@
 				<section data-markdown>
 					<textarea data-template>
 						## Recap
-						* [Gonzalos's presentation]()
+						* [Gonzalos's presentation](https://speakerdeck.com/gonzalocasas/the-road-to-open-networks)
 						* [What are LoRa and LoRaWAN?](https://lora-developers.semtech.com/library/tech-papers-and-guides/lora-and-lorawan/)
 						* [What is LoRaWan?](https://reference.digilentinc.com/reference/programmable-logic/pynq-z1/reference-manual)
+						* [LoRa Alliance&reg;](https://lora-alliance.org/)
                     </textarea>
 				</section>
 
@@ -108,6 +108,11 @@
 					<textarea data-template>
 						## Difference between LoRa and LoRaWAN
 						<img data-src="https://lora-developers.semtech.com/uploads/documents/images/Technology_stack.png">
+
+						Note:
+
+						LoRaWAN specification, industry standard
+
 					</textarea>
 				</section>
 
@@ -130,6 +135,13 @@
 						<img data-src="https://lora-developers.semtech.com/uploads/documents/images/Typical_Network.png">
 
 						[Source: Semtech](https://lora-developers.semtech.com/library/tech-papers-and-guides/lora-and-lorawan/)
+
+						Note:
+
+						Device classes
+
+						1-gateway 1000's of devices
+
 					</textarea>
 				</section>
 
@@ -197,20 +209,29 @@
 					<textarea data-template>
 					</textarea>
 				</section>
-				<section data-markdown data-background-image="images/pangote2.png">
-					<textarea data-template>
-					</textarea>
-				</section>
 				<section data-markdown data-background-image="images/pangote3.png">
 					<textarea data-template>
+						Note:
+
+						Forest
+
+						Interest in sustainability
+
+						conservation agriculture
 					</textarea>
 				</section>
-
 				<section data-markdown>
 					<textarea data-template>
 						## Disclaimer \# 2
 
 						I think cattle-raising, at least in its current form, is not sustainable
+
+						Note:
+						Silvopastoril
+					</textarea>
+				</section>
+				<section data-markdown data-background-image="images/pangote2.png">
+					<textarea data-template>
 					</textarea>
 				</section>
 
@@ -223,6 +244,12 @@
 						* Cows can roam into the forest
 						* Establish timely when a cow requires assistance
 
+						Note:
+
+						Movement patterns
+
+						Bebederos
+
 					</textarea>
 				</section>
 
@@ -231,6 +258,14 @@
 						## Architecture
 
 						<img data-src="images/cows_lorawan.png" height="300">
+
+						Note:
+
+						Tracker GPS
+						
+						modified firmware
+
+						Show TTN console
 					</textarea>
 				</section>
 
@@ -296,11 +331,22 @@
 						<img data-src="images/honorio1.png" height="600">
 					</textarea>
 				</section>
-			
+
 				<section data-markdown>
 					<textarea data-template>
 						## Happy cows 🐮🐮🐮							
 						<img data-src="images/honorio2.png" height="600">
+
+						Note:
+
+						Show application pangote
+
+						Problems in engineering are unavoidable
+
+						It is important to understand them
+
+						I show you the symptoms, and you try to come up with a diagnosis
+	
 					</textarea>
 				</section>
 
@@ -308,7 +354,7 @@
 					<textarea data-template>
 						## Happy cows 🐮🐮🐮							
 						<img data-src="images/goya1.png" height="600">
-					</textarea>
+				</textarea>
 				</section>
 
 
@@ -320,6 +366,20 @@
 				</section>
 
 
+				<section data-markdown>
+					<textarea data-template>
+						## Happy cows 🐮🐮🐮							
+						#### Possible improvements
+
+						<img data-src="https://www.semtech.com/uploads/products/product/LoRa-Edge-LR1110.jpg" height="300">
+						
+						[Source: Semtech](https://www.semtech.com/products/wireless-rf/lora-transceivers/lr1110)
+					</textarea>
+				</section>
+
+				<section data-background-color="#000000" data-background-image="images/coffee.jpg">
+					<h1>?</h1>
+				</section>
 
 
 
@@ -333,15 +393,32 @@
 					</textarea>
 				</section>
 
+				<section data-markdown>
+					<textarea data-template>
+						* The [information source](https://en.wikipedia.org/) I used to prepare some of the slides
+						* The [framework](https://github.com/hakimel/reveal.js/) I used to create them	
+						* The [text editor](https://github.com/Microsoft/vscode) I used to type them
+						* The [web browser](https://github.com/mozilla) am using to display the presentation
+						* [This presentation itself](https://github.com/twaclaw/presentation_unal_cowtracker)
+						* All code examples, including [basicmac](https://github.com/mkuyper/basicmac) and [ttn](https://github.com/TheThingsNetwork)
+						<span class="fragment fade-in">
+						<p class="fragment grow highlight-red">are all open-source!!!</p>
+						</span>
+					</textarea>
+				</section>
+
 				<section>
 					<img src="images/software-libre.png" style="border:0;background:none">
 				</section>
+
+
 
 				<section
 					data-background-image="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/121212_2_OpenSwissKnife.png/1920px-121212_2_OpenSwissKnife.png"
 					data-background-size="contain">
 					<div style="margin-top: 630px;font-size:20px;color:white;">Source: Wikipedia</div>
 				</section>
+
 
 				<section data-markdown
 					data-background-image="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Houghton_EC.B1328.620ib_-_Novum_organum_scientiarum.jpg/1280px-Houghton_EC.B1328.620ib_-_Novum_organum_scientiarum.jpg"
@@ -372,20 +449,6 @@
 						<p style="font-size:10pt">Source: Harari, Sapiens</p>
 					</textarea>
 				</section>
-				<section data-markdown>
-					<textarea data-template>
-						* The [information source](https://en.wikipedia.org/) I used to prepare some of the slides
-						* The [framework](https://github.com/hakimel/reveal.js/) I used to create them	
-						* The [text editor](https://github.com/Microsoft/vscode) I used to type them
-						* The [web browser](https://github.com/mozilla) am using to display the presentation
-						* [This presentation itself](https://github.com/twaclaw/presentation_unal_cowtracker)
-						* The code examples
-						<span class="fragment fade-in">
-						<p class="fragment grow highlight-red">are all open-source!!!</p>
-						</span>
-					</textarea>
-				</section>
-
 			</section>
 
 			<section>
@@ -407,7 +470,11 @@
 						<img data-src="images/starting_with_lorawan.png">
 
 						- [B-L072Z-LRWAN1 STM32L0 Discovery kit](https://www.st.com/en/evaluation-tools/b-l072z-lrwan1.html#)
-						- [Mini Hub](https://lora-alliance.org/lora_products/mini-hub-wall-plug-gateway/) ([basicstation])(https://github.com/lorabasics/basicstation)
+						- [Mini Hub](https://lora-alliance.org/lora_products/mini-hub-wall-plug-gateway/) ([basicstation](https://github.com/lorabasics/basicstation))
+
+						Note:
+
+						Tranceiver, modem
 					</textarea>
 				</section>
 				<section data-markdown>
@@ -420,6 +487,24 @@
 
 					</textarea>
 				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## End device: [basicmac programming model](https://doc.sm.tc/mac/programming.html)
+
+						<img data-src="https://doc.sm.tc/mac/_images/lmic-arch.svg">
+
+						Note:
+
+						OS and device
+
+						100ks devices
+
+						history
+
+					</textarea>
+				</section>
+
+
 				<section data-markdown data-background-color="#000000">
 					<textarea data-template>
 						## It's console time ...
@@ -483,6 +568,10 @@
 								minicom  -D /dev/ttyACM0  -b 2000000
 							</code>
 						</pre>
+
+						Note:
+
+						EEPROM
 					</textarea>
 				</section>
 
@@ -567,7 +656,9 @@ mosquitto_sub -h eu1.cloud.thethings.network \
 						</pre>
 					</textarea>
 				</section>
-
+				<section data-background-color="#000000" data-background-image="images/coffee.jpg">
+					<h1>?</h1>
+				</section>
 			</section>
 
 
